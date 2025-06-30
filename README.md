@@ -16,10 +16,10 @@ This repository serves as a practical foundation for:
 
 The repository is organized by language, including implementations in:
 
-- **C++ (C++20/C++23)** — using `std::thread`, `std::async`, `std::jthread`, `std::mutex`, OpenMP, etc.
-- **Rust** — using `std::thread`, `mpsc` channels, `tokio`, `rayon`, among others.
-- **Go** — using goroutines and channels (`chan`, `select`, `sync`, `waitgroup`).
-- **Elixir** — using `spawn`, `send/receive`, `Task`, `Agent`, `GenServer`.
+- **Rust**
+- **Go**
+- **OpenMP**
+- **GQM**: This directory contains the raw data collected by the application of the model developed using the GQM method.
 
 Each implementation addresses a classic problem (e.g., producer/consumer, Fibonacci calculation, Game of Life) to highlight different aspects of the concurrent and parallel programming models supported by each language.
 
@@ -28,9 +28,9 @@ Each implementation addresses a classic problem (e.g., producer/consumer, Fibona
 If you find this repository useful for your research or teaching, please cite the following references:
 
 ```bibtex
-@inproceedings{OpenMPEmpiricalStudySBLP2024,
-  author    = {Cristian Quevedo and Simone Cavalheiro and Marcos Oliveira Jr. and André Du Bois and Gerson Cavalheiro},
-  title     = {An Empirical Study of OpenMP Directive Usage in Open-Source Projects on GitHub},
+@inproceedings{YvyrupaCodeSSCAD2024,
+  author    = {Lucas Braatz Araújo, Daniel Di Domenico, André Rauber Du Bois, Gerson Geraldo H. Cavalheiro},
+  title     = {Revisitando Clássicos da Concorrência:\\Implementação e Avaliação em OpenMP, Rust e Golang},
   booktitle = {Anais do XXVI Simpósio em Sistemas Computacionais de Alto Desempenho},
   location  = {Bonito/MS},
   year      = {2025},
@@ -41,7 +41,11 @@ If you find this repository useful for your research or teaching, please cite th
   doi       = {xxxxx},
   url       = {https://somewhereovertherainbow}
 }
+´´´
 
+Outras informações podem ser encontradas em:
+
+```bibtex
 @incollection{CursoJAI2025,
   author    = {Gerson Cavalheiro and Alexandro Baldassin and André R. Du Bois},
   title     = {Programação Multithread: Modelos e Abstrações em Linguagens Contemporâneas},
