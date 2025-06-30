@@ -13,31 +13,31 @@
 \usepackage{amssymb}
 \usepackage{titlesec}
 \usepackage{fancyhdr}
-\usepackage[utf8]{inputenc} % acentuacao
+\usepackage[utf8]{inputenc} % encoding
 \usepackage[T1]{fontenc}
 
 \geometry{margin=2.5cm}
 \setlength{\parskip}{0.5em}
 \setlength{\parindent}{0pt}
 
-\title{Tabelas de Métricas GQM}
+\title{GQM Metrics Tables}
 \date{}
 
 \begin{document}
 
 \maketitle
 
-\section{Jantar dos Filósofos}
+\section{Dining Philosophers}
 
 \begin{table}[H]
 \centering
-\caption{Métricas GQM para o Jantar dos Filósofos.}
+\caption{GQM metrics for the Dining Philosophers problem.}
 \scriptsize
 \begin{tabular}{@{}lcccc@{}}
 \toprule
-\textbf{Métrica} & \textbf{Rust} & \textbf{Go} & \textbf{OpenMP} & \textbf{Pthreads} \\ 
+\textbf{Metric} & \textbf{Rust} & \textbf{Go} & \textbf{OpenMP} & \textbf{Pthreads} \\ 
 \midrule
-\multicolumn{5}{c}{\textbf{GO1: Expressividade}} \\ 
+\multicolumn{5}{c}{\textbf{GO1: Expressiveness}} \\ 
 \midrule
 M-1.1.1 NLA & 3 & 1 & 0 & 2 \\
 M-1.1.2 NCA & 19 & 16 & 8 & 11 \\
@@ -55,16 +55,16 @@ parallel, critical, atomic, flush
 pthread\_t, sem\_t, sem\_wait, sem\_post, pthread\_create, pthread\_join
 \end{minipage} \\
 M-1.2.1 SUA & 13 & 15 & 7 & 8 \\
-M-1.2.2 SSE & Alta & Média-Alta & Alta & Média \\
-M-1.3.1 CMI & Threads + Mutex/Condvar & Goroutines + Mutex & Threads com OpenMP & Threads + Semáforos \\
-M-1.3.2 CMF & Flexível & Flexível & Restrito & Restrito \\ 
+M-1.2.2 SSE & High & Medium-High & High & Medium \\
+M-1.3.1 CMI & Threads + Mutex/Condvar & Goroutines + Mutex & Threads with OpenMP & Threads + Semaphores \\
+M-1.3.2 CMF & Flexible & Flexible & Restricted & Restricted \\ 
 \midrule
-\multicolumn{5}{c}{\textbf{GO2: Esforço}} \\ 
+\multicolumn{5}{c}{\textbf{GO2: Effort}} \\ 
 \midrule
 M-2.1.1 LOC & 73 & 62 & 79 & 77 \\
 M-2.1.2 LOC-P & 15 & 13 & 8 & 10 \\
 M-2.2.1 CC & 3 & 4 & 14 & 7 \\
-M-2.2.2 ACU & Médio & Médio & Médio & Médio \\
+M-2.2.2 ACU & Medium & Medium & Medium & Medium \\
 M-2.3.1 NOPC & 19 & 16 & 8 & 11 \\
 M-2.3.2 PELU & 3 & 1 & 0 & 0 \\
 \bottomrule
@@ -72,17 +72,17 @@ M-2.3.2 PELU & 3 & 1 & 0 & 0 \\
 \label{tab:metricas_jantar_dos_filosofos}
 \end{table}
 
-\section{Produtor e Consumidor}
+\section{Producer and Consumer}
 
 \begin{table}[H]
 \centering
-\caption{Métricas GQM para o Produtor-Consumidor.}
+\caption{GQM metrics for the Producer-Consumer problem.}
 \scriptsize
 \begin{tabular}{@{}lcccc@{}}
 \toprule
-\textbf{Métrica} & \textbf{Rust} & \textbf{Go} & \textbf{OpenMP} & \textbf{Pthreads} \\ 
+\textbf{Metric} & \textbf{Rust} & \textbf{Go} & \textbf{OpenMP} & \textbf{Pthreads} \\ 
 \midrule
-\multicolumn{5}{c}{\textbf{GO1: Expressividade}} \\ 
+\multicolumn{5}{c}{\textbf{GO1: Expressiveness}} \\ 
 \midrule
 M-1.1.1 NLA & 1 & 1 & 1 & 1 \\
 M-1.1.2 NCA & 29 & 17 & 5 & 10\\
@@ -100,16 +100,16 @@ parallel, critical, flush
 pthread\_mutex, pthread\_create
 \end{minipage} \\
 M-1.2.1 SUA & 10 & 6 & 4 &  \\
-M-1.2.2 SSE & Alta & Alta & Alta & Moderada \\
-M-1.3.1 CMI & Threads + Mutex/Condvar & Goroutines + Mutex/Cond & Threads com OpenMP & Threads + Mutex \\
-M-1.3.2 CMF & Flexível & Flexível & Restrito & Flexível \\ 
+M-1.2.2 SSE & High & High & High & Moderate \\
+M-1.3.1 CMI & Threads + Mutex/Condvar & Goroutines + Mutex/Cond & Threads with OpenMP & Threads + Mutex \\
+M-1.3.2 CMF & Flexible & Flexible & Restricted & Flexible \\ 
 \midrule
-\multicolumn{5}{c}{\textbf{GO2: Esforço}} \\ 
+\multicolumn{5}{c}{\textbf{GO2: Effort}} \\ 
 \midrule
 M-2.1.1 LOC & 81 & 80 & 65 & 75 \\
 M-2.1.2 LOC-P & 29 & 17 & 7 & 10\\
 M-2.2.1 CC & 8 & 6 & 7 & 6 \\
-M-2.2.2 ACU & Baixo & Baixo & Médio & Média \\
+M-2.2.2 ACU & Low & Low & Medium & Medium \\
 M-2.3.1 NOPC & 29 & 17 & 7 & 10 \\
 M-2.3.2 PELU & 1 & 8 & 1 & 0 \\
 \bottomrule
@@ -117,17 +117,17 @@ M-2.3.2 PELU & 1 & 8 & 1 & 0 \\
 \label{tab:metricas_produtor_consumidor}
 \end{table}
 
-\section{Leitores e Escritores}
+\section{Readers and Writers}
 
 \begin{table}[H]
 \centering
-\caption{Métricas GQM para o Leitores-Escritores.}
+\caption{GQM metrics for the Readers-Writers problem.}
 \scriptsize
 \begin{tabular}{@{}lcccc@{}}
 \toprule
-\textbf{Métrica} & \textbf{Rust} & \textbf{Go} & \textbf{OpenMP} & \textbf{Pthreads} \\ 
+\textbf{Metric} & \textbf{Rust} & \textbf{Go} & \textbf{OpenMP} & \textbf{Pthreads} \\ 
 \midrule
-\multicolumn{5}{c}{\textbf{GO1: Expressividade}} \\ 
+\multicolumn{5}{c}{\textbf{GO1: Expressiveness}} \\ 
 \midrule
 M-1.1.1 NLA & 4 & 1 & 0 & 2\\
 M-1.1.2 NCA & 41 & 33 & 9 & 8\\
@@ -145,16 +145,16 @@ parallel, critical, atomic, flush
 pthread\_mutex\_t, pthread\_mutex\_init, pthread\_mutex\_lock, pthread\_mutex\_unlock, pthread\_create, pthread\_join, sem\_t, sem\_init, sem\_wait, sem\_post
 \end{minipage} \\
 M-1.2.1 SUA & 29 & 19 & 8 & 7\\
-M-1.2.2 SSE & Alta & Média-Alta & Alta & Média\\
-M-1.3.1 CMI & Threads + Mutex/Condvar & Goroutines + Mutex/Cond & Threads com OpenMP & Threads + Mutex + Semáforos\\
-M-1.3.2 CMF & Flexível & Flexível & Restrito & Restrito \\ 
+M-1.2.2 SSE & High & Medium-High & High & Medium\\
+M-1.3.1 CMI & Threads + Mutex/Condvar & Goroutines + Mutex/Cond & Threads with OpenMP & Threads + Mutex + Semaphores\\
+M-1.3.2 CMF & Flexible & Flexible & Restricted & Restricted \\ 
 \midrule
-\multicolumn{5}{c}{\textbf{GO2: Esforço}} \\ 
+\multicolumn{5}{c}{\textbf{GO2: Effort}} \\ 
 \midrule
 M-2.1.1 LOC & 91 & 76 & 90 & 66 \\
 M-2.1.2 LOC-P & 27 & 26 & 9 & 15 \\
 M-2.2.1 CC & 13 & 9 & 9 & 8 \\
-M-2.2.2 ACU & Médio & Médio & Médio & Médio \\
+M-2.2.2 ACU & Medium & Medium & Medium & Medium \\
 M-2.3.1 NOPC & 41 & 33 & 9 & 8 \\
 M-2.3.2 PELU & 4 & 1 & 0 & 0\\
 \bottomrule
@@ -162,17 +162,17 @@ M-2.3.2 PELU & 4 & 1 & 0 & 0\\
 \label{tab:metricas_leitores_escritores}
 \end{table}
 
-\section{Barbeiro Dorminhoco}
+\section{Sleeping Barber}
 
 \begin{table}[H]
 \centering
-\caption{Métricas GQM para o Barbeiro Dorminhoco.}
+\caption{GQM metrics for the Sleeping Barber problem.}
 \scriptsize
 \begin{tabular}{@{}lcccc@{}}
 \toprule
-\textbf{Métrica} & \textbf{Rust} & \textbf{Go} & \textbf{OpenMP} & \textbf{Pthreads} \\ 
+\textbf{Metric} & \textbf{Rust} & \textbf{Go} & \textbf{OpenMP} & \textbf{Pthreads} \\ 
 \midrule
-\multicolumn{5}{c}{\textbf{GO1: Expressividade}} \\ 
+\multicolumn{5}{c}{\textbf{GO1: Expressiveness}} \\ 
 \midrule
 M-1.1.1 NLA & 3 & 1 & 0 & 2\\
 M-1.1.2 NCA & 39 & 16 & 7 & 6\\
@@ -190,16 +190,16 @@ parallel, critical, atomic, flush, section, parallel for
 pthread\_t, pthread\_create, pthread\_exit, sem\_t, sem\_init, sem\_wait, sem\_post
 \end{minipage} \\
 M-1.2.1 SUA & 30 & 15 & 2 & 5 \\
-M-1.2.2 SSE & Alta & Média-Alta & Alta & Média \\
-M-1.3.1 CMI & Threads + Mutex/Condvar & Goroutines + Mutex/Condvar & Threads com OpenMP & Threads + Semáforos \\
-M-1.3.2 CMF & Flexível & Flexível & Restrito & Média \\ 
+M-1.2.2 SSE & High & Medium-High & High & Medium \\
+M-1.3.1 CMI & Threads + Mutex/Condvar & Goroutines + Mutex/Condvar & Threads with OpenMP & Threads + Semaphores \\
+M-1.3.2 CMF & Flexible & Flexible & Restricted & Medium \\ 
 \midrule
-\multicolumn{5}{c}{\textbf{GO2: Esforço}} \\ 
+\multicolumn{5}{c}{\textbf{GO2: Effort}} \\ 
 \midrule
 M-2.1.1 LOC & 81 & 84 & 92 & 52\\
 M-2.1.2 LOC-P & 29 & 16 & 6 & 12\\
 M-2.2.1 CC & 7 & 7 & 14 & 3\\
-M-2.2.2 ACU & Médio & Médio & Médio & Médio\\
+M-2.2.2 ACU & Medium & Medium & Medium & Medium\\
 M-2.3.1 NOPC & 39 & 16 & 7 & 6\\
 M-2.3.2 PELU & 3 & 1 & 0 & 0\\
 \bottomrule
@@ -207,17 +207,17 @@ M-2.3.2 PELU & 3 & 1 & 0 & 0\\
 \label{tab:metricas_barbeiro_dorminhoco}
 \end{table}
 
-\section{Problema dos Fumantes}
+\section{Smokers Problem}
 
 \begin{table}[H]
 \centering
-\caption{Métricas GQM para o Problema dos Fumantes.}
+\caption{GQM metrics for the Smokers Problem.}
 \scriptsize
 \begin{tabular}{@{}lcccc@{}}
 \toprule
-\textbf{Métrica} & \textbf{Rust} & \textbf{Go} & \textbf{OpenMP} & \textbf{Pthreads} \\ 
+\textbf{Metric} & \textbf{Rust} & \textbf{Go} & \textbf{OpenMP} & \textbf{Pthreads} \\ 
 \midrule
-\multicolumn{5}{c}{\textbf{GO1: Expressividade}} \\ 
+\multicolumn{5}{c}{\textbf{GO1: Expressiveness}} \\ 
 \midrule
 M-1.1.1 NLA & 3 & 2 & 0 & 2\\
 M-1.1.2 NCA & 11 & 17 & 8 & 26\\
@@ -235,16 +235,16 @@ parallel, critical, atomic, flush, section
 pthread\_create, sem\_init, sem\_wait, sem\_post
 \end{minipage} \\
 M-1.2.1 SUA & 13 & 14 & 3 & 15 \\
-M-1.2.2 SSE & Alta & Alta & Alta & Média \\
-M-1.3.1 CMI & Threads + Channels (crossbeam) & Goroutines + Channels & Threads com OpenMP & Threads + Semáforos \\
-M-1.3.2 CMF & Flexível & Flexível & Restrito & Média\\ 
+M-1.2.2 SSE & High & High & High & Medium \\
+M-1.3.1 CMI & Threads + Channels (crossbeam) & Goroutines + Channels & Threads with OpenMP & Threads + Semaphores \\
+M-1.3.2 CMF & Flexible & Flexible & Restricted & Medium\\ 
 \midrule
-\multicolumn{5}{c}{\textbf{GO2: Esforço}} \\ 
+\multicolumn{5}{c}{\textbf{GO2: Effort}} \\ 
 \midrule
 M-2.1.1 LOC & 78 & 96 & 99 & 95\\
 M-2.1.2 LOC-P & 11 & 17 & 8 & 31\\
 M-2.2.1 CC & 14 & 11 & 10 & 35\\
-M-2.2.2 ACU & Médio & Médio & Médio & Médio \\
+M-2.2.2 ACU & Medium & Medium & Medium & Medium \\
 M-2.3.1 NOPC & 11 & 17 & 8 & 26\\
 M-2.3.2 PELU & 3 & 1 & 0 & 0\\
 \bottomrule
