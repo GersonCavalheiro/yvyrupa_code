@@ -64,7 +64,7 @@ Outras informações podem ser encontradas em:
 
 The name Yvyrupa Code refers to the Guarani concept of Yvyrupa — the world as a shared, borderless land — symbolizing the coexistence of multiple programming languages within a unified analytical and practical space.
 
-## 📥 How to contribute
+##  How to contribute
 
 Contributions are welcome!
 
@@ -88,7 +88,7 @@ When submitting new implementations, please:
 - Follow the existing file structure and naming conventions.
 - Prefer idiomatic and efficient use of the language's concurrency model.
 
-📄 For detailed contribution guidelines, see:\
+ For detailed contribution guidelines, see:\
 👉 [CONTRIBUTING.md](CONTRIBUTING.md)
 
 Thank you for helping make Yvyrupa Code a better resource for the community!
