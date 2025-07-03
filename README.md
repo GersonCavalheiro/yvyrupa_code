@@ -89,6 +89,6 @@ When submitting new implementations, please:
 - Prefer idiomatic and efficient use of the language's concurrency model.
 
 📄 For detailed contribution guidelines, see:\
-👉 CONTRIBUTING.md
+👉 [CONTRIBUTING.md](CONTRIBUTING.md)
 
 Thank you for helping make Yvyrupa Code a better resource for the community!
