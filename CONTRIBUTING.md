@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing to the Yvyrupa-Code project! This repository explores parallel and concurrent programming by implementing classic problems in multiple programming languages with diverse concurrency models. Below are ways you can contribute to the project.
 
-## 🚀 Contribution Activities
+##  Contribution Activities
 
 ### 1. Implement in New Languages
 - Add idiomatic implementations of the existing problems in new languages such as **Java**, **Elixir**, **Julia**, **Kotlin**, **Erlang**, or **Swift**.
@@ -52,7 +52,7 @@ Thank you for your interest in contributing to the Yvyrupa-Code project! This re
   - Lock contention events
 - Can be implemented using Python + `streamlit` or JavaScript-based dashboards.
 
-## 🧭 Guidelines
+##  Guidelines
 - Follow idiomatic code style for each language.
 - Keep implementations minimal but clear.
 - Always document:
@@ -60,7 +60,7 @@ Thank you for your interest in contributing to the Yvyrupa-Code project! This re
   - Key primitives or libraries
   - Assumptions or limitations
 
-## 📬 Submitting Contributions
+##  Submitting Contributions
 1. Fork the repository.
 2. Create a new branch (`feature/my-feature`).
 3. Add your changes and commit.
